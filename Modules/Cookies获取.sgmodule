@@ -1,0 +1,14 @@
+#!name=重写获取
+#!desc=获取平台cookies
+#!system=ios
+# 分割线——————————————————————————
+[Script]
+# > 阿里云盘 app获取
+阿里云盘 = requires-body=1,type=http-response,pattern=https:\/\/auth.(aliyundrive|alipan).com\/v2\/account\/token,script-path=https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js
+# > 顺丰速运 app获取
+顺丰速运 = type=http-request, pattern=^https:\/\/ccsp-egmas.sf-express.com\/cx-app-member\/member\/app\/user\/universalSign,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.cookie.js,requires-body=1
+# > 华住会 app获取
+华住会 = type=http-request, pattern = https:\/\/hweb-mbf\.huazhu\.com\/api\/signIn, script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/hzh.js, requires-body=false
+# 分割线——————————————————————————
+[MITM]
+hostname = %APPEND% auth.alipan.com, ccsp-egmas.sf-express.com, hweb-mbf.huazhu.com, hweb-personalcenter.huazhu.com
