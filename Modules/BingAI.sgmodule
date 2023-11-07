@@ -1,0 +1,21 @@
+#!name = Bing AI
+#!desc = 将Safari浏览器伪装为Edge浏览器，以便绕过BingAI的使用限制。
+#!openUrl = 
+#!author = LiuYaChen 可莉🅥
+#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/main/Tool/Loon/Plugin
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/120px/Bing.png
+#!date = 2023-09-08 13:48:55
+
+
+[Header Rewrite]
+
+#[Rewrite]
+#http-request ^https:\/\/www\.bing\.com\/(search|new) header-add X-Forwarded-For 1.1.1.1
+
+[Script]
+
+BingAI_20 = type=http-request, pattern=^https:\/\/www\.bing\.com\/(search|new), script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Bing/BingAI.js, timeout=30
+
+[MITM]
+
+hostname = %APPEND% www.bing.com
