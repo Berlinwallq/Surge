@@ -1,10 +1,5 @@
 #!name = Ali-DoH
-#!desc=🔗 [2023/11/7 14:41:47] 使用阿里DNS-over-HTTPS (DoH)
-
-# 🔗 模块链接
-#SUBSCRIBED https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Spec/DoH/Moore/Ali-DoH.sgmodule
-
-
+#!desc = 使用阿里DNS-over-HTTPS (DoH)
 [General]
 dns-server = 223.5.5.5, 119.29.29.29
 encrypted-dns-server = https://dns.alidns.com/dns-query
