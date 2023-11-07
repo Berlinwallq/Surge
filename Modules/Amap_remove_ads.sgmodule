@@ -1,0 +1,79 @@
+#!name = 高德地图去广告
+#!desc=🔗 [2023/11/7 14:29:38] 过滤高德地图广告
+#!openUrl = 
+#!author = RuCu6 kokoryh
+#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/main/Tool/Loon/Plugin
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/120px/Amap.png
+#!date = 2023-09-15 11:20:57
+
+# 🔗 模块链接
+#SUBSCRIBED http://script.hub/file/_start_/https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Tool/Loon/Plugin/Amap_remove_ads.plugin/_end_/Amap_remove_ads.sgmodule?type=loon-plugin&target=surge-module
+
+
+[Rule]
+
+DOMAIN, amap-aos-info-nogw.amap.com,REJECT
+DOMAIN, awaken.amap.com,REJECT
+DOMAIN, free-aos-cdn-image.amap.com,REJECT
+
+[Script]
+
+# 移除阿里巴巴通用广告请求
+移除阿里巴巴通用广告请求_28 = type=http-response, pattern=^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch$, script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Alibaba/Alibaba_amdc_reject.js, timeout=30
+
+# 导航详情页 - 路线规划、地点详情页、搜索详情页、导航结束页
+移除导航详情页扰人组件_30 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/perception\/drive\/routePlan\?, script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Amap/Amap_remove_ads.js, requires-body=true, max-size=3145728, timeout=30
+
+移除导航详情页扰人组件_31 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/search\/(common\/coupon\/info|poi\/detail)\?, script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Amap/Amap_remove_ads.js, requires-body=true, max-size=3145728, timeout=30
+
+移除导航详情页扰人组件_32 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/search_poi\/(homepage|mps|search\/sp|sug|tips_operation_location)\?, script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Amap/Amap_remove_ads.js, requires-body=true, max-size=3145728, timeout=30
+
+# 首页 - 推广卡片、红点角标、右上角动图、搜索框热词、左下角天气、消息横幅
+移除首页扰人组件_34 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/(card-service-plan-home|main-page)\?, script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Amap/Amap_remove_ads.js, requires-body=true, max-size=3145728, timeout=30
+
+移除首页扰人组件_35 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/frogserver\/aocs\/updatable\/1\?, script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Amap/Amap_remove_ads.js, requires-body=true, max-size=3145728, timeout=30
+
+# 我的页面 - 个人主页、推广卡片
+移除我的页面扰人组件_37 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/dsp\/profile\/index\/nodefaasv3\?, script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Amap/Amap_remove_ads.js, requires-body=true, max-size=3145728, timeout=30
+
+# 附近页
+移除附近页推广_39 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/search\/nearbyrec_smart\?, script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Amap/Amap_remove_ads.js, requires-body=true, max-size=3145728, timeout=30
+
+# 开屏广告
+移除开屏广告_41 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\?, script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Amap/Amap_remove_ads.js, requires-body=true, max-size=3145728, timeout=30
+
+# 打车页 - 红点角标、弹窗、推广卡片
+移除打车页推广_43 = type=http-response, pattern=^https:\/\/m5-zb\.amap\.com\/ws\/promotion-web\/resource(\/home)?\?, script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Amap/Amap_remove_ads.js, requires-body=true, max-size=3145728, timeout=30
+
+移除打车页推广_44 = type=http-response, pattern=^https:\/\/m5-zb\.amap\.com\/ws\/sharedtrip\/taxi\/order_detail_car_tips\?, script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Amap/Amap_remove_ads.js, requires-body=true, max-size=3145728, timeout=30
+
+[Map Local]
+
+# 导航详情页 - 路线规划、地点详情页、搜索详情页、导航结束页
+^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/card-service-(car-end|route-plan)\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
+^https:\/\/m5\.amap\.com\/ws\/shield\/search\/new_hotword\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
+^https:\/\/m5\.amap\.com\/ws\/shield\/search_poi\/tips_adv\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
+^https:\/\/oss\.amap\.com\/ws\/banner\/lists\/\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
+# 首页 - 推广卡片、红点角标、右上角动图、搜索框热词、左下角天气、消息横幅
+^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/main-page-(assets|location)\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
+^https:\/\/m5\.amap\.com\/ws\/(mapapi\/hint_text\/offline_data|message\/notice\/list|shield\/search\/new_hotword)\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
+^https:\/\/m5\.amap\.com\/ws\/shield\/scene\/recommend\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
+^https:\/\/m5\.amap\.com\/ws\/valueadded\/weather\/v2\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
+^https:\/\/sns\.amap\.com\/ws\/msgbox\/pull_mp\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
+# 打车页 - 红点角标、弹窗、天气图标、推广卡片
+^https:\/\/m5-zb\.amap\.com\/ws\/boss\/(car\/order\/content_info|order\/car\/king_toolbox_car_bubble)\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
+^https:\/\/m5-zb\.amap\.com\/ws\/boss\/(order_web\/friendly_information|tips\/onscene_visual_optimization)\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+
+[MITM]
+
+hostname = %APPEND% m5.amap.com,m5-zb.amap.com,oss.amap.com,sns.amap.com

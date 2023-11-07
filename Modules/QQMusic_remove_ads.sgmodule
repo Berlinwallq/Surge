@@ -1,0 +1,32 @@
+#!name = QQ音乐去广告
+#!desc=🔗 [2023/11/7 14:28:35] 过滤QQ音乐广告
+#!openUrl = 
+#!author = 可莉🅥
+#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/main/Tool/Loon/Plugin
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/120px/QQMusic.png
+#!date = 2023-10-25 15:42:01
+
+# 🔗 模块链接
+#SUBSCRIBED http://script.hub/file/_start_/https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Tool/Loon/Plugin/QQMusic_remove_ads.plugin/_end_/QQMusic_remove_ads.sgmodule?type=loon-plugin&target=surge-module
+
+
+[Rule]
+
+DOMAIN, adstats.tencentmusic.com,REJECT
+DOMAIN, ad.tencentmusic.com,REJECT
+DOMAIN, adcdn.tencentmusic.com,REJECT
+DOMAIN, adexpo.tencentmusic.com,REJECT
+DOMAIN, adclick.tencentmusic.com,REJECT
+DOMAIN, otheve.beacon.qq.com,REJECT
+DOMAIN, monitor.music.qq.com,REJECT
+DOMAIN, stat.y.qq.com,REJECT
+DOMAIN, tmead.y.qq.com,REJECT
+DOMAIN, oth.str.mdt.qq.com,REJECT
+DOMAIN, h.trace.qq.com,REJECT
+DOMAIN, tmead.y.qq.com,REJECT
+DOMAIN-SUFFIX, imtmp.net,REJECT
+DOMAIN, sdk.e.qq.com,REJECT
+DOMAIN, p.l.qq.com,REJECT
+DOMAIN, us.l.qq.com,REJECT
+DOMAIN, tangram.e.qq.com,REJECT
+
