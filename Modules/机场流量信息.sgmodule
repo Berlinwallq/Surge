@@ -14,4 +14,4 @@
 Sub_info = script-name=Sub_info,update-interval=3600
 
 [Script]
-Sub_info = type=generic,timeout=10,script-path=Scripts/Sub-info.js,script-update-interval=0,argument=url=https%3A%2F%2Fjpvyyr.xyz%2F%3FL2Rvd25sb2FkQ29uZmlnL1N1cmdlQ29uZmlnLmFzcHg%2FdXJrPWYwNTQwZWIxLTBmNjItNDczYS04YmY4LTZjZjNhMDcwZTdiYyZtbT03MDEzNCYzODBjNjgyYmExMDQ0ZTUzYQ%3D%3D&reset_day=13&title=LZBoy&icon=externaldrive.fill.badge.icloud=#007aff
+Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/Berlinwallq/Surge/lzboy/Scripts/Sub-info.js,script-update-interval=0,argument=url=https%3A%2F%2Fjpvyyr.xyz%2F%3FL2Rvd25sb2FkQ29uZmlnL1N1cmdlQ29uZmlnLmFzcHg%2FdXJrPWYwNTQwZWIxLTBmNjItNDczYS04YmY4LTZjZjNhMDcwZTdiYyZtbT03MDEzNCYzODBjNjgyYmExMDQ0ZTUzYQ%3D%3D&reset_day=13&title=LZBoy&icon=externaldrive.fill.badge.icloud=#007aff
