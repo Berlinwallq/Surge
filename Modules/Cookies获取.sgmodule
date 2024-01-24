@@ -11,4 +11,4 @@
 华住会 = type=http-request, pattern = https:\/\/hweb-mbf\.huazhu\.com\/api\/signIn, script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/hzh.js, requires-body=false
 # 分割线——————————————————————————
 [MITM]
-hostname = %APPEND% auth.alipan.com, ccsp-egmas.sf-express.com, hweb-mbf.huazhu.com, hweb-personalcenter.huazhu.com
+hostname = %APPEND% auth.alipan.com, auth.aliyundrive.com, ccsp-egmas.sf-express.com, hweb-mbf.huazhu.com, hweb-personalcenter.huazhu.com
