@@ -1,30 +1,26 @@
 # NAME: China
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2023-12-14 16:56:00
-# DOMAIN: 19
+# UPDATED: 2024-02-25 16:03:05
+# DOMAIN: 15
 # DOMAIN-KEYWORD: 9
-# DOMAIN-SUFFIX: 3679
+# DOMAIN-SUFFIX: 3678
 # IP-CIDR: 17
 # IP-CIDR6: 4
 # USER-AGENT: 31
-# TOTAL: 3759
+# TOTAL: 3754
 DOMAIN,analytics.strava.com
 DOMAIN,blzddist1-a.akamaihd.net
 DOMAIN,cdn.angruo.com
 DOMAIN,cdp.cloud.unity3d.com
 DOMAIN,client.amplifi.com
-DOMAIN,dl.google.com
 DOMAIN,download.jetbrains.com
 DOMAIN,images-cn.ssl-images-amazon.com
 DOMAIN,ip.istatmenus.app
 DOMAIN,kc.kexinshe.com
-DOMAIN,mtalk.google.com
 DOMAIN,origin-a.akamaihd.ne
 DOMAIN,origin-a.akamaihd.net
-DOMAIN,outlook.office365.com
 DOMAIN,sms.imagetasks.com
-DOMAIN,smtp.office365.com
 DOMAIN,steamcommunity-a.akamaihd.net
 DOMAIN,www.libvideo.com
 DOMAIN,www.yxssp.com
@@ -1469,7 +1465,6 @@ DOMAIN-SUFFIX,gongxiangcj.com
 DOMAIN-SUFFIX,gongyi.xin
 DOMAIN-SUFFIX,goodread.com
 DOMAIN-SUFFIX,goofish.com
-DOMAIN-SUFFIX,googletraveladservices.com
 DOMAIN-SUFFIX,goosail.com
 DOMAIN-SUFFIX,goproxy.io
 DOMAIN-SUFFIX,goselling.com
@@ -1523,7 +1518,6 @@ DOMAIN-SUFFIX,haibian.com
 DOMAIN-SUFFIX,haidilao.com
 DOMAIN-SUFFIX,hainanairlines.com
 DOMAIN-SUFFIX,haishun.com
-DOMAIN-SUFFIX,hamreus.com
 DOMAIN-SUFFIX,hanboshi.com
 DOMAIN-SUFFIX,handanjob.com
 DOMAIN-SUFFIX,hangjiayun.com
@@ -2474,6 +2468,7 @@ DOMAIN-SUFFIX,oeeee.com
 DOMAIN-SUFFIX,offcn.com
 DOMAIN-SUFFIX,office.com
 DOMAIN-SUFFIX,office.net
+DOMAIN-SUFFIX,office365.com
 DOMAIN-SUFFIX,officese.com
 DOMAIN-SUFFIX,oi-wiki.com
 DOMAIN-SUFFIX,oicq88.com
