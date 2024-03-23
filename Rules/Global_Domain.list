@@ -1,15 +1,15 @@
 # NAME: Global
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2024-03-03 02:11:44
-# DOMAIN: 76
+# UPDATED: 2024-03-21 15:49:59
+# DOMAIN: 77
 # DOMAIN-KEYWORD: 37
-# DOMAIN-SUFFIX: 24058
+# DOMAIN-SUFFIX: 24074
 # IP-CIDR: 112
 # IP-CIDR6: 4
 # PROCESS-NAME: 1
 # USER-AGENT: 46
-# TOTAL: 24334
+# TOTAL: 24351
 .000webhost.com
 .01.org
 .02weqj32.com
@@ -2495,6 +2495,7 @@
 .bbc.co.uk
 .bbc.com
 .bbc.in
+.bbc.mp-pxcdn.com
 .bbc.net.uk
 .bbcchinese.com
 .bbchat.tv
@@ -4583,6 +4584,7 @@
 .cfake.com
 .cfblob.com
 .cfhks.org.hk
+.cfl.re
 .cfna.com
 .cfos.de
 .cfr.org
@@ -11048,6 +11050,7 @@
 .imagecurl.org
 .imagefap.com
 .imageflea.com
+.imageglass.org
 .imagepost.com
 .images-gaytube.com
 .imageshack.com
@@ -11192,7 +11195,6 @@
 .insecam.org
 .inshot.cc
 .inshot.com
-.inshotapp.com
 .inside.com.tw
 .insidefilms.com
 .insidemacintosh.com
@@ -14142,6 +14144,7 @@
 .modeltv.com
 .modernchinastudies.org
 .modmyi.com
+.modperl.pl
 .modrinth.com
 .modular.im
 .moeaic.gov.tw
@@ -15689,6 +15692,9 @@
 .okex.com
 .okk.tw
 .okkisokuho.com
+.okx-dns.com
+.okx-dns1.com
+.okx-dns2.com
 .okx.com
 .olabloga.pl
 .old-cat.net
@@ -16502,6 +16508,7 @@
 .pinflix.com
 .ping.fm
 .ping.pe
+.ping.sx
 .pingguotv.xyz
 .pingxiangpuer.com
 .pinimg.com
@@ -16641,7 +16648,10 @@
 .playsexygame.com
 .playshow.io
 .playshowtv.com
+.playstation.com
 .playstation.com.hk
+.playstation.net
+.playstationnetwork.com
 .playvalorant.com
 .playvids.com
 .playwarcraft3.com
@@ -17420,6 +17430,7 @@
 .qiandao.today
 .qiangwaikan.com
 .qiangyou.org
+.qiao-cn.com
 .qidian.ca
 .qienkuen.org
 .qinav.com
@@ -17749,6 +17760,7 @@
 .redchinacn.net
 .redchinacn.org
 .redd.it
+.reddit.app.link
 .reddit.com
 .redditlist.com
 .redditmail.com
@@ -19751,6 +19763,8 @@
 .taiav.com
 .tail-f.com
 .tailf.com
+.tailscale.com
+.tailscale.io
 .tailwindtraders.com
 .taiolongdh.sbs
 .taipei.gov.tw
@@ -20335,6 +20349,8 @@
 .tiktokcdn-us.com
 .tiktokcdn.com
 .tiktokv.com
+.tiktokv.us
+.tiktokw.us
 .tiltbrush.com
 .timdir.com
 .time.com
@@ -20638,6 +20654,7 @@
 .tryrating.com
 .tryst.link
 .ts.la
+.ts.net
 .tsctv.net
 .tsemtulku.com
 .tsescortsdirectory.com
@@ -22505,7 +22522,6 @@
 .wixipedia.net
 .wixmp.com
 .wixsite.com
-.wixstatic.com
 .wiz-s.jp
 .wizcrafts.net
 .wjbk.org
@@ -24134,6 +24150,7 @@ practivate.adobe
 practivate.adobe.ipp
 practivate.adobe.newoa
 practivate.adobe.ntp
+public-us-pingsx.api.clonoth.com
 push-apple.com.akadns.net
 qualcomm.sc.omtrdc.net
 tesla-cdn.thron.com
